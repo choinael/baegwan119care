@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>배관119케어 | 배관 전문 케어 · 막힘·누수 24시 긴급출동</title>
+<meta name="description" content="배관119케어 - 하수구·싱크대·변기 막힘, 역류, 누수, 악취 전문 해결. 오랜 경험과 최첨단 장비로 확실하게 시공합니다. 365일 연중무휴 24시 긴급출동, 책임시공 A/S보장. 상담 010-8216-2991">
+<meta property="og:title" content="배관119케어 | 배관 전문 케어 업체">
+<meta property="og:description" content="막힘·누수 해결! 빠르고 확실한 전문가. 24시 긴급출동 · 책임시공 A/S보장">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --navy-900:#08172e;
+    --navy-800:#0b2144;
+    --navy-700:#0f2c58;
+    --blue-600:#1461d1;
+    --blue-500:#1d76f2;
+    --blue-400:#3b8cff;
+    --cyan:#25c6e6;
+    --gold:#ffc233;
+    --gold-deep:#f0a500;
+    --ink:#0e1726;
+    --slate:#5b6b82;
+    --slate-2:#8592a6;
+    --line:#e6ebf2;
+    --bg:#ffffff;
+    --bg-soft:#f4f8ff;
+    --bg-soft-2:#eef4fc;
+    --white:#ffffff;
+    --radius:18px;
+    --radius-lg:26px;
+    --shadow-sm:0 4px 14px rgba(11,33,68,.06);
+    --shadow:0 18px 45px -18px rgba(11,33,68,.28);
+    --shadow-lg:0 40px 80px -32px rgba(8,23,46,.45);
+    --maxw:1180px;
+    --ease:cubic-bezier(.22,.61,.36,1);
+    --font:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,system-ui,"Malgun Gothic",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  body{
+    font-family:var(--font);
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    letter-spacing:-.02em;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  ul{list-style:none}
+  section{position:relative}
+  .wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.82rem;font-weight:700;letter-spacing:.06em;
+    color:var(--blue-600);text-transform:uppercase;
+    padding:7px 15px;border-radius:100px;
+    background:var(--bg-soft-2);border:1px solid #dbe7fb;
+  }
+  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--blue-500);box-shadow:0 0 0 4px rgba(29,118,242,.18)}
+  h1,h2,h3{letter-spacing:-.035em;line-height:1.18;font-weight:800}
+  .sec-head{text-align:center;max-width:720px;margin:0 auto 54px}
+  .sec-head h2{font-size:clamp(1.9rem,4.4vw,2.9rem);margin:18px 0 14px;color:var(--navy-800)}
+  .sec-head p{color:var(--slate);font-size:1.05rem}
+  .grad-text{background:linear-gradient(100deg,var(--blue-500),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:9px;
+    font-weight:700;font-size:1rem;border:none;cursor:pointer;
+    padding:15px 28px;border-radius:100px;transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s;
+    white-space:nowrap;
+  }
+  .btn svg{width:19px;height:19px}
+  .btn-primary{background:linear-gradient(120deg,var(--blue-600),var(--blue-400));color:#fff;box-shadow:0 14px 30px -12px rgba(20,97,209,.7)}
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 22px 40px -12px rgba(20,97,209,.85)}
+  .btn-gold{background:linear-gradient(120deg,var(--gold),var(--gold-deep));color:#3a2a00;box-shadow:0 14px 30px -12px rgba(240,165,0,.7)}
+  .btn-gold:hover{transform:translateY(-3px)}
+  .btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(6px)}
+  .btn-ghost:hover{background:rgba(255,255,255,.16);transform:translateY(-3px)}
+  .btn-kakao{background:#FEE500;color:#1a1600;box-shadow:0 14px 30px -12px rgba(254,229,0,.7)}
+  .btn-kakao:hover{transform:translateY(-3px);background:#ffe600}
+  .btn-kakao .talk{background:#3a1d1d;color:#FEE500;font-size:.72rem;font-weight:900;padding:5px 8px 6px;border-radius:8px 8px 8px 2px;line-height:1;letter-spacing:0}
+  .btn-lg{padding:18px 34px;font-size:1.08rem}
+
+  /* ---------- Top bar ---------- */
+  .topbar{background:var(--navy-900);color:#c9d6ea;font-size:.85rem}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:40px}
+  .topbar .tl{display:flex;gap:20px;align-items:center}
+  .topbar .tl span{display:inline-flex;align-items:center;gap:7px}
+  .topbar .tl svg{width:14px;height:14px;color:var(--gold)}
+  .topbar .tr{display:flex;align-items:center;gap:8px;font-weight:700;color:#fff}
+  .topbar .tr b{color:var(--gold);letter-spacing:.02em}
+  @media(max-width:680px){.topbar .tl span:not(:first-child){display:none}}
+
+  /* ---------- Header ---------- */
+  header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.9);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:box-shadow .3s,border-color .3s}
+  header.scrolled{box-shadow:0 8px 30px -18px rgba(11,33,68,.35);border-color:var(--line)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .logo{display:flex;align-items:center;gap:11px;font-weight:900;font-size:1.28rem;color:var(--navy-800);letter-spacing:-.04em}
+  .logo .mark{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--navy-800),var(--blue-600));display:grid;place-items:center;box-shadow:0 8px 18px -8px rgba(20,97,209,.7)}
+  .logo .mark svg{width:23px;height:23px;color:#fff}
+  .logo small{display:block;font-size:.66rem;font-weight:600;color:var(--slate-2);letter-spacing:.14em;margin-top:-2px}
+  nav.main{display:flex;align-items:center;gap:4px}
+  nav.main a{font-weight:600;font-size:.98rem;color:var(--slate);padding:10px 15px;border-radius:10px;transition:.2s;position:relative}
+  nav.main a:hover{color:var(--blue-600);background:var(--bg-soft)}
+  .head-cta{display:flex;align-items:center;gap:14px}
+  .head-phone{display:flex;flex-direction:column;line-height:1.15;text-align:right}
+  .head-phone small{font-size:.68rem;color:var(--slate-2);font-weight:600}
+  .head-phone b{font-size:1.18rem;color:var(--navy-800);font-weight:800;letter-spacing:-.02em}
+  .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px}
+  .nav-toggle span{display:block;width:24px;height:2.5px;background:var(--navy-800);border-radius:2px;transition:.3s}
+  .nav-toggle span+span{margin-top:5px}
+  @media(max-width:1080px){
+    nav.main{display:none}
+    .nav-toggle{display:none}
+    .head-phone{display:none}
+  }
+  .nav-backdrop{display:none}
+
+  /* ---------- Hero (full-width poster) ---------- */
+  .hero{position:relative;padding:0 0 clamp(70px,9vw,100px);background:linear-gradient(180deg,var(--navy-900),var(--navy-700))}
+  .hero-poster{display:block;width:100%;line-height:0}
+  .hero-poster img{width:100%;display:block}
+  .hero .wrap{position:relative;z-index:2;padding-top:clamp(22px,3vw,34px);display:flex;justify-content:center}
+  .hero-mini-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  @media(max-width:560px){
+    .hero-mini-cta{flex-direction:column;align-items:stretch;width:100%;max-width:360px}
+    .hero-mini-cta .btn{width:100%;padding:15px 20px;font-size:1.02rem}
+  }
+
+  /* ---------- Stats bar ---------- */
+  .stats{margin-top:-60px;position:relative;z-index:5}
+  .stats .grid{background:#fff;border-radius:var(--radius-lg);box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden;border:1px solid var(--line)}
+  .stat{padding:30px 24px;text-align:center;position:relative}
+  .stat+.stat::before{content:"";position:absolute;left:0;top:22%;height:56%;width:1px;background:var(--line)}
+  .stat .num{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:900;color:var(--navy-800);letter-spacing:-.04em;line-height:1}
+  .stat .num .suf{color:var(--blue-500)}
+  .stat .lbl{margin-top:8px;color:var(--slate);font-size:.92rem;font-weight:600}
+  @media(max-width:760px){.stats .grid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(3)::before,.stat:nth-child(1)::before{display:none}.stat:nth-child(3),.stat:nth-child(4){border-top:1px solid var(--line)}}
+
+  /* ---------- Services ---------- */
+  .services{padding:clamp(70px,9vw,110px) 0 clamp(60px,7vw,90px)}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .svc-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:34px 30px 30px;overflow:hidden;transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .3s}
+  .svc-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--blue-500),var(--cyan));transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+  .svc-card:hover{transform:translateY(-8px);box-shadow:var(--shadow);border-color:transparent}
+  .svc-card:hover::before{transform:scaleX(1)}
+  .svc-num{position:absolute;top:22px;right:26px;font-size:2.6rem;font-weight:900;color:var(--bg-soft-2);letter-spacing:-.05em;line-height:1}
+  .svc-ic{width:62px;height:62px;border-radius:16px;background:linear-gradient(135deg,var(--navy-800),var(--blue-600));display:grid;place-items:center;margin-bottom:20px;box-shadow:0 12px 24px -12px rgba(20,97,209,.7)}
+  .svc-ic svg{width:32px;height:32px;color:#fff}
+  .svc-card h3{font-size:1.4rem;color:var(--navy-800);margin-bottom:10px}
+  .svc-card p{color:var(--slate);font-size:.98rem;margin-bottom:16px}
+  .svc-tags{display:flex;flex-wrap:wrap;gap:7px}
+  .svc-tags li{font-size:.82rem;font-weight:600;color:var(--blue-600);background:var(--bg-soft);padding:5px 11px;border-radius:8px}
+  .svc-sub{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:24px}
+  .svc-mini{display:flex;align-items:center;gap:13px;background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;padding:16px 18px;transition:.3s}
+  .svc-mini:hover{background:#fff;box-shadow:var(--shadow-sm);transform:translateY(-4px)}
+  .svc-mini .mi{width:40px;height:40px;border-radius:11px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;flex-shrink:0}
+  .svc-mini .mi svg{width:21px;height:21px;color:var(--blue-600)}
+  .svc-mini b{font-size:.98rem;color:var(--navy-800);font-weight:700}
+  .svc-mini small{display:block;color:var(--slate-2);font-size:.78rem;font-weight:500}
+  @media(max-width:900px){.svc-grid{grid-template-columns:1fr}.svc-sub{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.svc-sub{grid-template-columns:1fr}}
+
+  /* ---------- Why / features ---------- */
+  .why{padding:clamp(70px,9vw,110px) 0;background:linear-gradient(180deg,var(--bg-soft),#fff)}
+  .why-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:center}
+  .why-list{display:grid;gap:16px;margin-top:30px}
+  .why-item{display:flex;gap:18px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow-sm);transition:.3s}
+  .why-item:hover{transform:translateX(6px);box-shadow:var(--shadow)}
+  .why-item .ic{width:52px;height:52px;border-radius:14px;flex-shrink:0;display:grid;place-items:center;background:var(--bg-soft-2)}
+  .why-item .ic svg{width:26px;height:26px;color:var(--blue-600)}
+  .why-item h4{font-size:1.14rem;color:var(--navy-800);margin-bottom:4px}
+  .why-item p{color:var(--slate);font-size:.94rem}
+  .why-visual{position:relative;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:3/3.3;box-shadow:var(--shadow);background:linear-gradient(150deg,#e8f0fc,#dbe8fb)}
+  .why-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .why-visual .ph{position:absolute;inset:0;display:grid;place-content:center;text-align:center;gap:8px;color:var(--slate-2)}
+  .why-visual .ph svg{width:52px;height:52px;margin:0 auto;opacity:.6}
+  .why-guarantee{position:absolute;left:20px;bottom:20px;right:20px;background:rgba(8,23,46,.86);backdrop-filter:blur(8px);color:#fff;border-radius:16px;padding:18px 22px;display:flex;align-items:center;gap:14px}
+  .why-guarantee svg{width:34px;height:34px;color:var(--gold);flex-shrink:0}
+  .why-guarantee b{font-size:1.05rem;display:block}
+  .why-guarantee small{color:#b9c9e2;font-size:.85rem}
+  @media(max-width:900px){.why-grid{grid-template-columns:1fr;gap:40px}.why-visual{max-width:440px;margin:0 auto;width:100%}}
+
+  /* ---------- Portfolio / cases ---------- */
+  .cases{padding:clamp(70px,9vw,110px) 0;background:var(--navy-900);color:#fff;position:relative;overflow:hidden}
+  .cases::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 15% 20%,rgba(37,198,230,.12),transparent 40%),radial-gradient(circle at 85% 80%,rgba(29,118,242,.16),transparent 45%)}
+  .cases .wrap{position:relative;z-index:2}
+  .cases .sec-head h2{color:#fff}
+  .cases .sec-head p{color:#a9bcd8}
+  .cases .eyebrow{background:rgba(37,198,230,.12);border-color:rgba(37,198,230,.3);color:#7fe0f2}
+  .case-filter{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:36px}
+  .case-filter button{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);color:#c6d5ec;font-weight:600;font-size:.92rem;padding:10px 20px;border-radius:100px;cursor:pointer;transition:.25s}
+  .case-filter button:hover{background:rgba(255,255,255,.14);color:#fff}
+  .case-filter button.active{background:linear-gradient(120deg,var(--blue-500),var(--cyan));color:#fff;border-color:transparent}
+  .case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .case{position:relative;border-radius:var(--radius);overflow:hidden;background:linear-gradient(150deg,#123059,#0c1f3d);aspect-ratio:4/3.4;box-shadow:var(--shadow-lg);cursor:pointer;transition:transform .4s var(--ease)}
+  .case:hover{transform:translateY(-6px)}
+  .case>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+  .case:hover>img{transform:scale(1.07)}
+  .case .ph{position:absolute;inset:0;display:grid;place-content:center;gap:8px;text-align:center;color:#6f8ab8}
+  .case .ph svg{width:44px;height:44px;margin:0 auto;opacity:.6}
+  .case .ph small{font-size:.82rem;font-weight:600}
+  .case .overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,16,33,.92) 0%,rgba(6,16,33,.25) 45%,transparent 70%);display:flex;flex-direction:column;justify-content:flex-end;padding:22px;z-index:2}
+  .case .cat{align-self:flex-start;background:linear-gradient(120deg,var(--gold),var(--gold-deep));color:#3a2a00;font-size:.75rem;font-weight:800;padding:5px 12px;border-radius:100px;margin-bottom:auto}
+  .case h4{font-size:1.12rem;margin-bottom:4px}
+  .case p{font-size:.87rem;color:#c0d1ea}
+  .case .tick{position:absolute;top:16px;right:16px;width:30px;height:30px;border-radius:50%;background:rgba(26,162,81,.95);display:grid;place-items:center;z-index:3}
+  .case .tick svg{width:16px;height:16px;color:#fff}
+  @media(max-width:820px){.case-grid{grid-template-columns:repeat(2,1fr);gap:16px}}
+  @media(max-width:430px){.case-grid{gap:12px}.case h4{font-size:.95rem}.case p{font-size:.76rem}.case .cat{font-size:.66rem;padding:3px 9px}.case .overlay{padding:13px}}
+  .cases-note{text-align:center;margin-top:30px;color:#8ba0c2;font-size:.9rem}
+
+  /* ---------- Process ---------- */
+  .process{padding:clamp(70px,9vw,110px) 0}
+  .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;position:relative}
+  .steps::before{content:"";position:absolute;top:36px;left:8%;right:8%;height:2px;background:repeating-linear-gradient(90deg,var(--line) 0 10px,transparent 10px 18px);z-index:0}
+  .step{position:relative;z-index:1;text-align:center;padding:0 6px}
+  .step .circle{width:72px;height:72px;margin:0 auto 18px;border-radius:22px;background:#fff;border:2px solid var(--line);display:grid;place-items:center;position:relative;transition:.35s var(--ease);box-shadow:var(--shadow-sm)}
+  .step .circle svg{width:32px;height:32px;color:var(--blue-600)}
+  .step .circle .n{position:absolute;top:-9px;right:-9px;width:26px;height:26px;border-radius:50%;background:linear-gradient(120deg,var(--gold),var(--gold-deep));color:#3a2a00;font-size:.8rem;font-weight:800;display:grid;place-items:center;box-shadow:0 4px 10px rgba(240,165,0,.5)}
+  .step:hover .circle{transform:translateY(-6px);border-color:var(--blue-400);background:var(--bg-soft)}
+  .step h4{font-size:1.06rem;color:var(--navy-800);margin-bottom:5px}
+  .step p{font-size:.86rem;color:var(--slate)}
+  @media(max-width:820px){.steps{grid-template-columns:repeat(2,1fr);gap:34px 16px}.steps::before{display:none}}
+  @media(max-width:430px){.steps{gap:28px 14px}.step .circle{width:60px;height:60px}.step .circle svg{width:27px;height:27px}.step h4{font-size:.98rem}.step p{font-size:.8rem}}
+
+  /* ---------- Equipment ---------- */
+  .equip{padding:clamp(70px,9vw,110px) 0;background:var(--bg-soft)}
+  .equip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .eq{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;text-align:center;transition:.35s var(--ease)}
+  .eq:hover{transform:translateY(-8px);box-shadow:var(--shadow);border-color:transparent}
+  .eq .ic{width:66px;height:66px;margin:0 auto 18px;border-radius:18px;background:linear-gradient(135deg,var(--bg-soft-2),#dce8fb);display:grid;place-items:center}
+  .eq .ic svg{width:34px;height:34px;color:var(--blue-600)}
+  .eq h4{font-size:1.1rem;color:var(--navy-800);margin-bottom:8px}
+  .eq p{font-size:.9rem;color:var(--slate)}
+  @media(max-width:860px){.equip-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:460px){.equip-grid{grid-template-columns:1fr}}
+
+  /* ---------- Testimonials ---------- */
+  .reviews{padding:clamp(70px,9vw,110px) 0}
+  .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .rev{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;transition:.3s;display:flex;flex-direction:column}
+  .rev:hover{box-shadow:var(--shadow);transform:translateY(-6px);border-color:transparent}
+  .rev .stars{display:flex;gap:2px;margin-bottom:14px}
+  .rev .stars svg{width:18px;height:18px;color:var(--gold)}
+  .rev p{color:var(--ink);font-size:.98rem;line-height:1.7;flex:1;margin-bottom:20px}
+  .rev .who{display:flex;align-items:center;gap:12px}
+  .rev .ava{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--blue-600),var(--cyan));color:#fff;display:grid;place-items:center;font-weight:800;font-size:1.05rem}
+  .rev .who b{display:block;font-size:.96rem;color:var(--navy-800)}
+  .rev .who small{color:var(--slate-2);font-size:.82rem}
+  .rev .tag{display:inline-block;font-size:.75rem;font-weight:700;color:var(--blue-600);background:var(--bg-soft);padding:4px 10px;border-radius:7px;margin-bottom:14px;align-self:flex-start}
+  @media(max-width:900px){.rev-grid{grid-template-columns:1fr}}
+
+  /* ---------- Area ---------- */
+  .area{padding:clamp(70px,9vw,110px) 0;background:linear-gradient(160deg,var(--navy-800),var(--navy-700));color:#fff;position:relative;overflow:hidden}
+  .area::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:40px 40px;mask-image:radial-gradient(700px 400px at 30% 40%,#000,transparent 75%)}
+  .area .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1.1fr;gap:50px;align-items:center}
+  .area .eyebrow{background:rgba(37,198,230,.12);border-color:rgba(37,198,230,.3);color:#7fe0f2}
+  .area h2{font-size:clamp(1.9rem,4.4vw,2.8rem);margin:18px 0 16px;color:#fff}
+  .area .lead{color:#b9c9e2;font-size:1.05rem;margin-bottom:26px}
+  .area .badges{display:flex;gap:12px;flex-wrap:wrap}
+  .area .badges .b{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:16px 20px;text-align:center;flex:1;min-width:120px}
+  .area .badges .b b{font-size:1.5rem;color:var(--gold);display:block}
+  .area .badges .b small{color:#c6d5ec;font-size:.85rem}
+  .area-map{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-lg);padding:30px}
+  .area-map h4{font-size:1.05rem;margin-bottom:16px;color:#dbe9ff;display:flex;align-items:center;gap:8px}
+  .area-map h4 svg{width:20px;height:20px;color:var(--cyan)}
+  .area-tags{display:flex;flex-wrap:wrap;gap:8px}
+  .area-tags span{font-size:.86rem;font-weight:600;color:#d5e2f5;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);padding:7px 13px;border-radius:100px;transition:.25s}
+  .area-tags span:hover{background:rgba(37,198,230,.2);border-color:rgba(37,198,230,.4);color:#fff}
+  @media(max-width:900px){.area .wrap{grid-template-columns:1fr;gap:36px}}
+
+  /* ---------- Pricing ---------- */
+  .pricing{padding:clamp(70px,9vw,110px) 0}
+  .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .price{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:34px 30px;position:relative;transition:.35s var(--ease)}
+  .price:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+  .price.feat{border:2px solid var(--blue-500);box-shadow:var(--shadow)}
+  .price.feat .rib{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(120deg,var(--blue-600),var(--blue-400));color:#fff;font-size:.78rem;font-weight:700;padding:6px 18px;border-radius:100px;white-space:nowrap}
+  .price h4{font-size:1.2rem;color:var(--navy-800);margin-bottom:6px}
+  .price .amt{font-size:2.4rem;font-weight:900;color:var(--navy-800);letter-spacing:-.04em;margin:8px 0 4px}
+  .price .amt small{font-size:1rem;font-weight:600;color:var(--slate)}
+  .price .amt .pre{font-size:.95rem;color:var(--slate-2);font-weight:600}
+  .price ul{margin:18px 0 24px;display:grid;gap:11px}
+  .price ul li{display:flex;gap:10px;align-items:flex-start;font-size:.94rem;color:var(--ink)}
+  .price ul li svg{width:19px;height:19px;color:#1aa251;flex-shrink:0;margin-top:2px}
+  .price .btn{width:100%}
+  .price-note{text-align:center;margin-top:26px;color:var(--slate);font-size:.92rem;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
+  .price-note svg{width:18px;height:18px;color:var(--blue-500)}
+  @media(max-width:900px){.price-grid{grid-template-columns:1fr}.price.feat{order:-1}}
+
+  /* ---------- FAQ ---------- */
+  .faq{padding:clamp(70px,9vw,110px) 0;background:var(--bg-soft)}
+  .faq-list{max-width:820px;margin:0 auto;display:grid;gap:14px}
+  .faq-item{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:box-shadow .3s}
+  .faq-item.open{box-shadow:var(--shadow)}
+  .faq-q{width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 24px;display:flex;align-items:center;gap:14px;font-size:1.04rem;font-weight:700;color:var(--navy-800);font-family:inherit}
+  .faq-q .qmark{width:28px;height:28px;border-radius:8px;background:var(--bg-soft-2);color:var(--blue-600);font-weight:800;display:grid;place-items:center;flex-shrink:0}
+  .faq-q .chev{margin-left:auto;width:22px;height:22px;color:var(--slate-2);transition:transform .3s;flex-shrink:0}
+  .faq-item.open .chev{transform:rotate(180deg);color:var(--blue-600)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
+  .faq-a p{padding:0 24px 22px 66px;color:var(--slate);font-size:.96rem;line-height:1.75}
+  @media(max-width:520px){.faq-a p{padding-left:24px}}
+
+  /* ---------- Contact / form ---------- */
+  .contact{padding:clamp(70px,9vw,110px) 0;background:radial-gradient(900px 500px at 20% 0%,#123869,transparent 55%),linear-gradient(160deg,var(--navy-900),var(--navy-700));color:#fff;position:relative;overflow:hidden}
+  .contact .glow{position:absolute;width:400px;height:400px;border-radius:50%;background:#1d76f2;filter:blur(90px);opacity:.35;top:-100px;right:-80px}
+  .contact .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1.05fr;gap:54px;align-items:center}
+  .contact-info .eyebrow{background:rgba(37,198,230,.12);border-color:rgba(37,198,230,.3);color:#7fe0f2}
+  .contact-info h2{font-size:clamp(1.9rem,4.4vw,2.8rem);margin:18px 0 16px;color:#fff}
+  .contact-info .lead{color:#bccbe4;font-size:1.05rem;margin-bottom:30px}
+  .contact-call{display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:20px 24px;margin-bottom:16px;transition:.3s}
+  .contact-call:hover{background:rgba(255,255,255,.1);transform:translateY(-3px)}
+  .contact-call .ic{width:54px;height:54px;border-radius:15px;background:linear-gradient(135deg,var(--gold),var(--gold-deep));display:grid;place-items:center;flex-shrink:0}
+  .contact-call .ic svg{width:28px;height:28px;color:#3a2a00}
+  .contact-call small{color:#b9c9e2;font-size:.85rem;font-weight:600;display:block}
+  .contact-call b{font-size:1.7rem;font-weight:900;letter-spacing:-.02em;line-height:1.1}
+  .contact-hours{display:flex;gap:8px;align-items:center;color:#c6d5ec;font-size:.92rem;font-weight:600}
+  .contact-hours svg{width:18px;height:18px;color:var(--cyan)}
+  .form-card{background:#fff;border-radius:var(--radius-lg);padding:36px 34px;box-shadow:var(--shadow-lg);color:var(--ink)}
+  .form-card h3{font-size:1.35rem;color:var(--navy-800);margin-bottom:6px}
+  .form-card .fsub{color:var(--slate);font-size:.92rem;margin-bottom:22px}
+  .fld{margin-bottom:15px}
+  .fld label{display:block;font-size:.86rem;font-weight:700;color:var(--navy-800);margin-bottom:7px}
+  .fld label .req{color:#e5484d}
+  .fld input,.fld select,.fld textarea{width:100%;font-family:inherit;font-size:.98rem;padding:13px 15px;border:1.5px solid var(--line);border-radius:12px;background:var(--bg-soft);color:var(--ink);transition:.25s;outline:none}
+  .fld input:focus,.fld select:focus,.fld textarea:focus{border-color:var(--blue-500);background:#fff;box-shadow:0 0 0 4px rgba(29,118,242,.12)}
+  .fld-row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+  .agree{display:flex;align-items:flex-start;gap:9px;margin:6px 0 18px;font-size:.86rem;color:var(--slate)}
+  .agree input{width:18px;height:18px;margin-top:2px;accent-color:var(--blue-600);flex-shrink:0}
+  .agree a{color:var(--blue-600);font-weight:600;text-decoration:underline}
+  .form-card .btn{width:100%}
+  .form-ok{display:none;text-align:center;padding:26px 10px}
+  .form-ok.show{display:block}
+  .form-ok svg{width:56px;height:56px;color:#1aa251;margin:0 auto 14px}
+  .form-ok h3{color:var(--navy-800)}
+  .form-ok p{color:var(--slate);margin-top:6px}
+  @media(max-width:900px){.contact .wrap{grid-template-columns:1fr;gap:40px}.fld-row{grid-template-columns:1fr}}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--navy-900);color:#93a6c4;padding:56px 0 30px}
+  .foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.09)}
+  .foot-brand .logo{color:#fff;margin-bottom:16px}
+  .foot-brand .logo small{color:#7f93b3}
+  .foot-brand p{font-size:.92rem;max-width:340px;line-height:1.7}
+  .foot-col h5{color:#fff;font-size:1rem;margin-bottom:16px;font-weight:700}
+  .foot-col ul{display:grid;gap:10px}
+  .foot-col a,.foot-col li{font-size:.92rem;color:#93a6c4;transition:.2s}
+  .foot-col a:hover{color:#fff}
+  .foot-col .finfo{display:flex;gap:9px;align-items:flex-start;font-size:.9rem}
+  .foot-col .finfo svg{width:17px;height:17px;color:var(--cyan);flex-shrink:0;margin-top:3px}
+  .foot-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding-top:24px;font-size:.85rem;color:#6f83a3}
+  .foot-bottom .fl{display:flex;gap:18px}
+  .foot-bottom a:hover{color:#fff}
+  @media(max-width:820px){.foot-top{grid-template-columns:1fr 1fr}.foot-brand{grid-column:1/-1}}
+  @media(max-width:480px){.foot-top{grid-template-columns:1fr}}
+
+  /* ---------- Bottom-right CTA cluster ---------- */
+  .cta-bar{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom));left:auto;z-index:58;display:flex;flex-direction:column;gap:10px;align-items:stretch}
+  .cta-bar a{display:flex;align-items:center;justify-content:center;gap:11px;border-radius:16px;text-decoration:none;box-shadow:0 14px 28px -10px rgba(8,23,46,.55);transition:transform .2s var(--ease),box-shadow .2s;padding:11px 20px;font-weight:800}
+  .cta-bar a:hover{transform:translateY(-3px);box-shadow:0 20px 34px -12px rgba(8,23,46,.6)}
+  .cta-bar__call{background:linear-gradient(120deg,#0f2c58,#1461d1);color:#fff;animation:pulse 2.4s infinite}
+  .cta-bar__call .ic{width:36px;height:36px;border-radius:50%;background:#fff;display:grid;place-items:center;flex-shrink:0}
+  .cta-bar__call .ic svg{width:20px;height:20px;color:var(--blue-600)}
+  .cta-bar__call .txt{display:flex;flex-direction:column;line-height:1.12;text-align:left}
+  .cta-bar__call small{font-size:.74rem;font-weight:600;color:#c7d8f2;letter-spacing:-.01em}
+  .cta-bar__call b{font-size:1.24rem;font-weight:900;letter-spacing:.01em}
+  .cta-bar__kakao{background:#FEE500;color:#1a1600;font-weight:800;font-size:1.05rem;letter-spacing:-.02em}
+  .cta-bar__kakao .talk{background:#3a1d1d;color:#FEE500;font-size:.7rem;font-weight:900;padding:5px 8px 6px;border-radius:8px 8px 8px 2px;line-height:1;letter-spacing:0}
+  /* 모바일: 하단 풀와이드 고정바 */
+  @media(max-width:600px){
+    body{padding-bottom:76px}
+    .hero-mini-cta{display:none}
+    .cta-bar{left:0;right:0;bottom:0;flex-direction:row;align-items:stretch;gap:7px;padding:8px 9px calc(8px + env(safe-area-inset-bottom));background:none;backdrop-filter:none}
+    .cta-bar a{border-radius:12px;padding:8px 12px;min-width:0;box-shadow:0 6px 16px -6px rgba(0,0,0,.5)}
+    .cta-bar__call{flex:1 1 0;min-width:0;gap:9px;animation:none}
+    .cta-bar__call .txt{min-width:0;overflow:hidden}
+    .cta-bar__call small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .cta-bar__call b{white-space:nowrap;font-size:1.12rem}
+    .cta-bar__kakao{flex:0 0 auto;white-space:nowrap;justify-content:center;padding:8px 15px;font-size:1rem}
+  }
+
+  /* ---------- Floating actions ---------- */
+  .fab{position:fixed;left:20px;right:auto;bottom:22px;z-index:55;display:flex;flex-direction:column;gap:12px}
+  .fab a,.fab button{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;box-shadow:var(--shadow);cursor:pointer;border:none;transition:transform .25s var(--ease),box-shadow .25s;position:relative}
+  .fab a svg,.fab button svg{width:26px;height:26px}
+  .fab .call{background:linear-gradient(135deg,var(--blue-600),var(--blue-400));color:#fff;animation:pulse 2.2s infinite}
+  .fab .kakao{background:#FEE500;color:#3c1e1e}
+  .fab .top{background:#fff;color:var(--navy-800);border:1px solid var(--line);opacity:0;visibility:hidden;transform:translateY(10px)}
+  .fab .top.show{opacity:1;visibility:visible;transform:none}
+  .fab a:hover,.fab button:hover{transform:scale(1.08)}
+  .fab .call .lab{position:absolute;right:70px;top:50%;transform:translateY(-50%);background:var(--navy-800);color:#fff;font-size:.82rem;font-weight:700;padding:8px 14px;border-radius:10px;white-space:nowrap;opacity:0;pointer-events:none;transition:.25s}
+  .fab .call:hover .lab{opacity:1}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(29,118,242,.55)}70%{box-shadow:0 0 0 16px rgba(29,118,242,0)}100%{box-shadow:0 0 0 0 rgba(29,118,242,0)}}
+  @media(max-width:600px){.fab a,.fab button{width:46px;height:46px}.fab{left:14px;bottom:80px}}
+
+  /* ---------- Small-screen polish ---------- */
+  @media(max-width:600px){
+    .wrap{padding:0 16px}
+    .sec-head{margin-bottom:36px}
+    .eyebrow{font-size:.74rem;padding:6px 12px}
+    .stat{padding:22px 12px}
+    .svc-card{padding:26px 22px 24px}
+    .svc-num{font-size:2rem;top:18px;right:20px}
+    /* keep bottom-right CTA from covering too much: shrink label */
+    .cta-bar__call small{font-size:.68rem}
+    .cta-bar__call b{font-size:1.02rem}
+    .cta-bar__call .ic{width:32px;height:32px}
+    .cta-bar__call .ic svg{width:18px;height:18px}
+    .rev{padding:24px 22px}
+    .faq-q{padding:18px 18px;font-size:.98rem}
+    .form-card{padding:28px 20px}
+    .foot-bottom{flex-direction:column;align-items:flex-start;gap:8px}
+  }
+  @media(max-width:360px){
+    .cta-bar__call .txt small{display:none}
+  }
+
+  /* Reveal animation */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+  .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}*{animation:none!important}}
+</style>
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="tl">
+      <span>🛡️ 365일 연중무휴</span>
+      <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 11h-2V6h2z"/></svg> 24시간 긴급출동</span>
+      <span>✔ 출장비 무료 · 책임시공 A/S보장</span>
+    </div>
+    <div class="tr">긴급상담 <b>010-8216-2991</b></div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header id="top">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="배관119케어 홈">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></span>
+      <span>배관119케어<small>PLUMBING CARE</small></span>
+    </a>
+    <nav class="main" id="nav">
+      <a href="#services">서비스</a>
+      <a href="#why">시공품질</a>
+      <a href="#cases">시공사례</a>
+      <a href="#process">진행과정</a>
+      <a href="#equip">보유장비</a>
+      <a href="#reviews">고객후기</a>
+      <a href="#contact">상담신청</a>
+    </nav>
+    <div class="head-cta">
+      <div class="head-phone">
+        <small>24시 긴급상담</small>
+        <b>010-8216-2991</b>
+      </div>
+      <a href="tel:010-8216-2991" class="btn btn-primary"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>전화상담</a>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="nav-backdrop" id="navBackdrop"></div>
+
+<!-- ============ HERO (full-width poster) ============ -->
+<section class="hero">
+  <a href="tel:010-8216-2991" class="hero-poster reveal" aria-label="배관119케어 전화 상담 010-8216-2991">
+    <img src="https://i.ibb.co/23SpwPbc/image.jpg" alt="배관119케어 배관 전문 케어 업체 - 막힘·누수 해결, 하수구·싱크대·변기 막힘, 24시간 긴급출동, 책임시공 A/S보장, 상담 010-8216-2991">
+  </a>
+  <div class="wrap">
+    <div class="hero-mini-cta reveal d1">
+      <a href="tel:010-8216-2991" class="btn btn-gold btn-lg"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>전화 상담 010-8216-2991</a>
+      <a href="http://pf.kakao.com/_your_channel" class="btn btn-kakao btn-lg" target="_blank" rel="noopener"><span class="talk">TALK</span>카카오톡 상담</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<div class="stats">
+  <div class="wrap">
+    <div class="grid reveal">
+      <div class="stat"><div class="num"><span data-count="12000">0</span><span class="suf">+</span></div><div class="lbl">누적 시공 현장</div></div>
+      <div class="stat"><div class="num"><span data-count="30">0</span><span class="suf">분</span></div><div class="lbl">평균 출동 시간</div></div>
+      <div class="stat"><div class="num"><span data-count="98">0</span><span class="suf">%</span></div><div class="lbl">고객 만족도</div></div>
+      <div class="stat"><div class="num"><span data-count="365">0</span><span class="suf">일</span></div><div class="lbl">연중무휴 운영</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="dot"></span>SERVICES</span>
+      <h2>배관의 모든 문제,<br><span class="grad-text">한 곳에서 완벽하게</span></h2>
+      <p>단순 뚫음이 아닌 원인 진단부터 근본 해결까지. 배관119케어가 책임집니다.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card reveal">
+        <span class="svc-num">01</span>
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v6a6 6 0 006 6h6"/><path d="M15 15v3a3 3 0 003 3h0a3 3 0 003-3v-2"/><circle cx="6" cy="6" r="1"/></svg></div>
+        <h3>하수구 막힘</h3>
+        <p>주방·욕실·베란다 하수구 막힘과 역류, 지독한 냄새까지 근본 원인을 찾아 확실하게 해결합니다.</p>
+        <ul class="svc-tags"><li>하수구 막힘</li><li>역류 해결</li><li>냄새 제거</li><li>배관 세척</li></ul>
+      </div>
+      <div class="svc-card reveal d1">
+        <span class="svc-num">02</span>
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18"/><path d="M12 3v6"/><path d="M8 9h8l-1 12H9L8 9z"/></svg></div>
+        <h3>싱크대 막힘</h3>
+        <p>기름때와 음식물로 막힌 싱크대·씽크대 배수구, 역류 문제를 전문 장비로 깔끔하게 뚫어드립니다.</p>
+        <ul class="svc-tags"><li>싱크대 막힘</li><li>역류 해결</li><li>기름때 제거</li><li>배수구 청소</li></ul>
+      </div>
+      <div class="svc-card reveal d2">
+        <span class="svc-num">03</span>
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v6a6 6 0 01-6 6 6 6 0 01-6-6V3z"/><path d="M9 15v3a3 3 0 003 3h0"/><path d="M15 21h3"/></svg></div>
+        <h3>변기 막힘</h3>
+        <p>이물질·휴지 과다로 인한 변기 막힘과 역류, 물내림 불량을 신속하게 진단하고 해결합니다.</p>
+        <ul class="svc-tags"><li>변기 막힘</li><li>역류 해결</li><li>물내림 불량</li><li>이물질 제거</li></ul>
+      </div>
+    </div>
+    <div class="svc-sub">
+      <div class="svc-mini reveal"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><div><b>누수 탐지·해결</b><small>벽체·바닥 누수</small></div></div>
+      <div class="svc-mini reveal d1"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg></span><div><b>고압세척</b><small>배관 내부 세척</small></div></div>
+      <div class="svc-mini reveal d2"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span><div><b>내시경 점검</b><small>배관 상태 확인</small></div></div>
+      <div class="svc-mini reveal d3"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2v6h6"/><path d="M4 7V4a2 2 0 012-2h8l6 6v12a2 2 0 01-2 2H6a2 2 0 01-2-2v-3"/><path d="M2 15h8"/><path d="M6 11l-4 4 4 4"/></svg></span><div><b>배관 교체·공사</b><small>노후 배관 교체</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY ============ -->
+<section class="why" id="why">
+  <div class="wrap why-grid">
+    <div class="why-copy reveal">
+      <span class="eyebrow"><span class="dot"></span>WHY 배관119케어</span>
+      <h2 style="font-size:clamp(1.9rem,4.4vw,2.8rem);color:var(--navy-800);margin:18px 0 14px">아무 곳이나 부르면<br>또 막힙니다.</h2>
+      <p style="color:var(--slate);font-size:1.05rem">가격만 싸고 뚫기만 하는 업체와는 다릅니다. 원인을 정확히 진단하고, 재발 없이 확실하게 해결하는 것이 진짜 전문가입니다.</p>
+      <div class="why-list">
+        <div class="why-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></span><div><h4>전문 장비 직접 보유</h4><p>플렉스 샤프트, 내시경 카메라, 고압세척기 등 상황별 최적 장비를 완비했습니다.</p></div></div>
+        <div class="why-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><div><h4>숙련 전문가 직접 시공</h4><p>하도급 없이 오랜 경력의 전문가가 현장에 직접 방문해 처음부터 끝까지 시공합니다.</p></div></div>
+        <div class="why-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span><div><h4>신속·정확한 서비스</h4><p>서울·경기·인천 전지역 24시간 긴급출동, 평균 30분 내 도착을 약속합니다.</p></div></div>
+        <div class="why-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></span><div><h4>합리적인 정찰 가격</h4><p>거품 없는 투명한 가격 정찰제. 작업 전 정확한 견적을 먼저 안내드립니다.</p></div></div>
+      </div>
+    </div>
+    <div class="why-visual reveal d2">
+      <!-- 실제 시공 사진으로 교체: images/why.jpg -->
+      <img src="images/why.jpg" alt="전문 장비로 시공 중인 배관119케어" onerror="this.remove()">
+      <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span style="font-size:.9rem;font-weight:600">시공 사진 준비중</span></div>
+      <div class="why-guarantee">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 15l-4-4 1.41-1.41L11 13.17l5.59-5.59L18 9l-7 7z"/></svg>
+        <div><b>100% 책임시공 A/S 보장</b><small>시공 후 문제 발생 시 끝까지 책임집니다.</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CASES ============ -->
+<section class="cases" id="cases">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="dot"></span>PORTFOLIO</span>
+      <h2>믿음은 결과가 증명합니다</h2>
+      <p>실제 현장에서 완벽하게 해결한 배관119케어의 시공 사례입니다.</p>
+    </div>
+    <div class="case-filter reveal">
+      <button class="active" data-filter="all">전체</button>
+      <button data-filter="sink">싱크대</button>
+      <button data-filter="drain">하수구</button>
+      <button data-filter="toilet">변기</button>
+      <button data-filter="pipe">배관·누수</button>
+    </div>
+    <div class="case-grid" id="caseGrid">
+      <figure class="case reveal" data-cat="sink">
+        <img src="images/case-1.jpg" alt="싱크대 배관 플렉스샤프트 시공" onerror="this.remove()">
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><small>시공 사진 준비중</small></div>
+        <span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+        <div class="overlay"><span class="cat">싱크대 막힘</span><h4>주방 싱크대 배수관 관통</h4><p>플렉스 샤프트로 기름때 막힘 완벽 제거</p></div>
+      </figure>
+      <figure class="case reveal d1" data-cat="drain">
+        <img src="images/case-2.jpg" alt="지하 배관 하수구 시공 현장" onerror="this.remove()">
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><small>시공 사진 준비중</small></div>
+        <span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+        <div class="overlay"><span class="cat">하수구·배관</span><h4>지하 배관 계통 정밀 점검</h4><p>내시경으로 원인 파악 후 통수 작업</p></div>
+      </figure>
+      <figure class="case reveal d2" data-cat="pipe">
+        <img src="images/case-3.jpg" alt="싱크대 하부 배관 정비" onerror="this.remove()">
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><small>시공 사진 준비중</small></div>
+        <span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+        <div class="overlay"><span class="cat">배관·누수</span><h4>싱크대 하부 배관 정비</h4><p>노후 연결부 점검 및 역류 해결</p></div>
+      </figure>
+      <figure class="case reveal" data-cat="toilet">
+        <img src="images/case-4.jpg" alt="변기 막힘 해결 시공" onerror="this.remove()">
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><small>시공 사진 준비중</small></div>
+        <span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+        <div class="overlay"><span class="cat">변기 막힘</span><h4>화장실 변기 이물질 제거</h4><p>물내림 불량 원인 제거 및 정상화</p></div>
+      </figure>
+      <figure class="case reveal d1" data-cat="drain">
+        <img src="images/case-5.jpg" alt="상가 하수구 고압세척" onerror="this.remove()">
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><small>시공 사진 준비중</small></div>
+        <span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+        <div class="overlay"><span class="cat">고압세척</span><h4>상가 하수구 고압세척</h4><p>누적 오염물 세척으로 냄새까지 해결</p></div>
+      </figure>
+      <figure class="case reveal d2" data-cat="sink">
+        <img src="images/case-6.jpg" alt="주방 배수구 막힘 시공" onerror="this.remove()">
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><small>시공 사진 준비중</small></div>
+        <span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+        <div class="overlay"><span class="cat">싱크대 막힘</span><h4>식당 주방 배수구 관통</h4><p>영업 중단 없이 신속 해결</p></div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="dot"></span>PROCESS</span>
+      <h2>이렇게 진행됩니다</h2>
+      <p>전화 한 통이면 끝. 투명하고 빠른 5단계 프로세스</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="circle"><span class="n">1</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg></div><h4>문의·접수</h4><p>전화 또는 상담신청으로<br>증상을 알려주세요</p></div>
+      <div class="step reveal d1"><div class="circle"><span class="n">2</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div><h4>현장 진단</h4><p>신속 출동 후 원인을<br>정밀하게 진단</p></div>
+      <div class="step reveal d2"><div class="circle"><span class="n">3</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 15h6M9 11h2"/></svg></div><h4>정찰 견적</h4><p>작업 전 투명한 가격을<br>먼저 안내</p></div>
+      <div class="step reveal d3"><div class="circle"><span class="n">4</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div><h4>전문 시공</h4><p>전용 장비로 확실하게<br>문제 해결</p></div>
+      <div class="step reveal d4"><div class="circle"><span class="n">5</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/><path d="M9 12l2 2 4-4"/></svg></div><h4>확인·A/S</h4><p>내시경 확인 후<br>A/S까지 보장</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EQUIPMENT ============ -->
+<section class="equip" id="equip">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="dot"></span>EQUIPMENT</span>
+      <h2>기술은 손끝에서,<br><span class="grad-text">정밀함은 장비에서</span></h2>
+      <p>어디서도 해결하지 못한 막힘, 현장에 맞는 전문 장비로 해결합니다.</p>
+    </div>
+    <div class="equip-grid">
+      <div class="eq reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div><h4>플렉스 샤프트</h4><p>배관 손상 없이 강력하게 관통하는 브러시리스 관통 장비</p></div>
+      <div class="eq reveal d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div><h4>내시경 카메라</h4><p>배관 내부를 눈으로 확인, 정확한 원인 진단과 시공 검증</p></div>
+      <div class="eq reveal d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg></div><h4>고압 세척기</h4><p>강력한 수압으로 배관 내부 누적 오염물을 새것처럼 세척</p></div>
+      <div class="eq reveal d3"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div><h4>특수 타공 장비</h4><p>고난도 현장을 위한 전문 타공 및 배관 교체 장비 완비</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="dot"></span>REVIEWS</span>
+      <h2>고객이 먼저 인정한 실력</h2>
+      <p>실제 고객님들이 남겨주신 생생한 후기입니다.</p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev reveal">
+        <span class="tag">싱크대 막힘 · 아파트</span>
+        <div class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.6.6-5.8 5 1.8 7.4L12 18l-6.4 3.9 1.8-7.4L1.6 9.5l7.6-.6L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.6.6-5.8 5 1.8 7.4L12 18l-6.4 3.9 1.8-7.4L1.6 9.5l7.6-.6L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.6.6-5.8 5 1.8 7.4L12 18l-6.4 3.9 1.8-7.4L1.6 9.5l7.6-.6L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.6.6-5.8 5 1.8 7.4L12 18l-6.4 3.9 1.8-7.4L1.6 9.5l7.6-.6L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.6.6-5.8 5 1.8 7.4L12 18l-6.4 3.9 1.8-7.4L1.6 9.5l7.6-.6L12 2z"/></svg></div>
+        <p>싱크대가 막혀서 가족들 식사도 못 하고 곤란했는데, 좋은 장비로 작업하시고 뚫은 뒤 내시경으로 잘 됐는지 확인까지 시켜주셔서 정말 믿음이 갔어요.</p>
+        <div class="who"><span class="ava">김</span><div><b>김○○ 고객님</b><small>인천 부평구</small></div></div>
+      </div>
+      <div class="rev reveal d1">
+        <span class="tag">변기 막힘 · 가정집</span>
+        <div class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.6.6-5.8 5 1.8 7.4L12 18l-6.4 3.9 1.8-7.4L1.6 9.5l7.6-.6L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.6.6-5.8 5 1.8 7.4L12 18l-6.4 3.9 1.8-7.4L1.6 9.5l7.6-.6L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.6.6-5.8 5 1.8 7.4L12 18l-6.4 3.9 1.8-7.4L1.6 9.5l7.6-.6L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.6.6-5.8 5 1.8 7.4L12 18l-6.4 3.9 1.8-7.4L1.6 9.5l7.6-.6L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.6.6-5.8 5 1.8 7.4L12 18l-6.4 3.9 1.8-7.4L1.6 9.5l7.6-.6L12 2z"/></svg></div>
+        <p>변기가 막혀서 너무 당황스러웠는데 부른 지 20분도 안 돼서 오셨고, 빠르게 처리해주셔서 너무 좋았어요. 역시 전문가는 다르네요!</p>
+        <div class="who"><span class="ava">이</span><div><b>이○○ 고객님</b><small>경기 수원시</small></div></div>
+      </div>
+      <div class="rev reveal d2">
+        <span class="tag">하수구 역류 · 상가</span>
+        <div class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.6.6-5.8 5 1.8 7.4L12 18l-6.4 3.9 1.8-7.4L1.6 9.5l7.6-.6L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.6.6-5.8 5 1.8 7.4L12 18l-6.4 3.9 1.8-7.4L1.6 9.5l7.6-.6L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.6.6-5.8 5 1.8 7.4L12 18l-6.4 3.9 1.8-7.4L1.6 9.5l7.6-.6L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.6.6-5.8 5 1.8 7.4L12 18l-6.4 3.9 1.8-7.4L1.6 9.5l7.6-.6L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.9 7.6.6-5.8 5 1.8 7.4L12 18l-6.4 3.9 1.8-7.4L1.6 9.5l7.6-.6L12 2z"/></svg></div>
+        <p>가게 하수구가 막혀서 장사 시작도 못 하고 발만 동동 굴렀는데, 정말 빠르게 오셔서 한 번에 뚫어주셔서 놀랐어요. 덕분에 영업 손해 없이 넘어갔습니다.</p>
+        <div class="who"><span class="ava">박</span><div><b>박○○ 사장님</b><small>서울 강남구</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="dot"></span>FAQ</span>
+      <h2>자주 묻는 질문</h2>
+      <p>궁금하신 점을 모았습니다. 더 궁금하시면 언제든 전화주세요.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q"><span class="qmark">Q</span>방문 가능 지역은 어디인가요?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="faq-a"><p>서울 전 지역과 인천, 경기 대부분 지역 방문이 가능합니다. 수원·성남·용인·부천·안양·안산·고양·의정부·남양주 등 대부분 지역에 30분 내 출동합니다. 그 외 지역도 문의주시면 안내해드립니다.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q"><span class="qmark">Q</span>작업 비용은 어떻게 결정되나요?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="faq-a"><p>기본적으로 가격 정찰제로 투명하게 안내드립니다. 다만 막힘 위치, 원인, 배관 상태, 작업 난이도에 따라 비용이 달라질 수 있어 현장에서 정확히 진단한 후 작업 전에 견적을 먼저 말씀드립니다. 동의하신 후에만 작업을 진행합니다.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q"><span class="qmark">Q</span>급하게 지금 바로 와주실 수 있나요?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="faq-a"><p>네, 365일 연중무휴 24시간 긴급출동합니다. 서울·경기·인천 전지역 평균 30분 내 도착을 목표로 운영하며, 야간·주말·공휴일에도 상담 및 출동이 가능합니다. 급하실수록 바로 전화주세요.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q"><span class="qmark">Q</span>뚫어도 자꾸 막히는데 근본 해결이 되나요?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="faq-a"><p>단순 통수가 아니라 내시경 카메라로 배관 내부를 확인해 막힘의 근본 원인을 찾습니다. 필요 시 고압세척으로 배관 내부 누적 오염물까지 제거해 재발 가능성을 낮춥니다. 노후 배관은 교체를 안내드립니다.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q"><span class="qmark">Q</span>화장실·주방 악취도 해결되나요?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="faq-a"><p>네. 악취는 단순 오염보다 배수구 트랩 문제, 환기 부족, 하수구 막힘 등 구조적 원인인 경우가 많습니다. 원인을 정확히 진단해 배관 세척과 함께 냄새의 근본 원인까지 해결해드립니다.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q"><span class="qmark">Q</span>시공 후 문제가 생기면 어떻게 하나요?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="faq-a"><p>배관119케어는 책임시공 A/S를 보장합니다. 시공 후 동일한 문제가 발생하면 즉시 재방문하여 조치해드리니 안심하고 맡겨주세요.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <span class="glow"></span>
+  <div class="wrap">
+    <div class="contact-info reveal">
+      <span class="eyebrow"><span class="dot"></span>CONTACT</span>
+      <h2>지금 바로<br>무료 상담 받아보세요</h2>
+      <p class="lead">밤 늦게, 주말에도 괜찮습니다. 막힘·누수로 막막할 때 전문가에게 먼저 물어보세요.</p>
+      <a href="tel:010-8216-2991" class="contact-call">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg></span>
+        <div><small>24시간 긴급상담</small><b>010-8216-2991</b></div>
+      </a>
+      <div class="contact-hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>365일 연중무휴 · 언제든지 문의주세요!</div>
+    </div>
+    <div class="form-card reveal d1">
+      <form id="consultForm">
+        <h3>무료 상담 신청</h3>
+        <p class="fsub">남겨주시면 빠르게 연락드리겠습니다.</p>
+        <div class="fld-row">
+          <div class="fld"><label>성함 <span class="req">*</span></label><input type="text" name="name" placeholder="홍길동" required></div>
+          <div class="fld"><label>연락처 <span class="req">*</span></label><input type="tel" name="phone" placeholder="010-0000-0000" required></div>
+        </div>
+        <div class="fld-row">
+          <div class="fld"><label>지역</label><input type="text" name="area" placeholder="예) 서울 강남구"></div>
+          <div class="fld"><label>작업 종류</label>
+            <select name="type">
+              <option value="">선택해주세요</option>
+              <option>하수구 막힘</option>
+              <option>싱크대 막힘</option>
+              <option>변기 막힘</option>
+              <option>누수·역류</option>
+              <option>고압세척·배관공사</option>
+              <option>기타</option>
+            </select>
+          </div>
+        </div>
+        <div class="fld"><label>증상 / 상담 희망 시간</label><textarea name="memo" rows="2" placeholder="예) 싱크대 물이 안 내려가요 / 오늘 저녁 방문 희망"></textarea></div>
+        <label class="agree"><input type="checkbox" required>개인정보 수집 및 이용(상담 목적)에 동의합니다.</label>
+        <button type="submit" class="btn btn-primary btn-lg">무료 상담 신청하기</button>
+      </form>
+      <div class="form-ok" id="formOk">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l2.5 2.5L16 9"/></svg>
+        <h3>상담 신청이 접수되었습니다</h3>
+        <p>확인 후 최대한 빠르게 연락드리겠습니다.<br>급하시면 <b>010-8216-2991</b>로 바로 전화주세요!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="logo">
+          <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></span>
+          <span>배관119케어<small>PLUMBING CARE</small></span>
+        </div>
+        <p>막힘·누수 해결! 빠르고 확실한 전문가. 오랜 경험과 전문 장비로 배관 문제를 확실하게 해결하는 배관 전문 케어 업체입니다.</p>
+      </div>
+      <div class="foot-col">
+        <h5>서비스</h5>
+        <ul>
+          <li><a href="#services">하수구 막힘</a></li>
+          <li><a href="#services">싱크대 막힘</a></li>
+          <li><a href="#services">변기 막힘</a></li>
+          <li><a href="#services">누수·고압세척</a></li>
+          <li><a href="#cases">시공사례</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>고객센터</h5>
+        <ul>
+          <li class="finfo"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg><span style="color:#fff;font-weight:800;font-size:1.15rem">010-8216-2991</span></li>
+          <li class="fino finfo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>365일 연중무휴 24시간</li>
+          <li class="finfo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>서울·경기·인천 전지역</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 배관119케어. All rights reserved.</div>
+      <div class="fl"><span>사업자등록번호 : 000-00-00000</span><a href="#top">맨 위로 ↑</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FAB (맨 위로) ============ -->
+<div class="fab">
+  <button class="top" id="toTop" aria-label="맨 위로"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg></button>
+</div>
+
+<!-- ============ 하단 고정 CTA 바 ============ -->
+<div class="cta-bar">
+  <a href="tel:010-8216-2991" class="cta-bar__call" aria-label="24시 빠른상담 바로 통화 010-8216-2991">
+    <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg></span>
+    <span class="txt"><small>24시 빠른상담 바로 통화</small><b>010-8216-2991</b></span>
+  </a>
+  <!-- 카톡 채널 주소로 교체: http://pf.kakao.com/_본인채널ID -->
+  <a href="http://pf.kakao.com/_your_channel" class="cta-bar__kakao" target="_blank" rel="noopener" aria-label="카카오톡 상담">
+    <span class="talk">TALK</span><span class="lbl-full">카톡 상담</span>
+  </a>
+</div>
+
+<script>
+(function(){
+  // Sticky header shadow
+  const header=document.getElementById('top').previousElementSibling?null:null;
+  const hdr=document.querySelector('header');
+  const onScroll=()=>{
+    hdr.classList.toggle('scrolled',window.scrollY>10);
+    document.getElementById('toTop').classList.toggle('show',window.scrollY>500);
+  };
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  // Mobile nav
+  const nav=document.getElementById('nav'),tog=document.getElementById('navToggle'),bd=document.getElementById('navBackdrop');
+  const closeNav=()=>{document.body.classList.remove('nav-open');nav.classList.remove('open');};
+  tog.addEventListener('click',()=>{document.body.classList.toggle('nav-open');nav.classList.toggle('open');});
+  bd.addEventListener('click',closeNav);
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeNav));
+
+  // Reveal on scroll
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // Counter
+  const counters=document.querySelectorAll('[data-count]');
+  const cio=new IntersectionObserver((es)=>{es.forEach(e=>{
+    if(!e.isIntersecting)return;const el=e.target;cio.unobserve(el);
+    const target=+el.dataset.count;const dur=1500;const t0=performance.now();
+    const fmt=(n)=>n.toLocaleString('ko-KR');
+    const tick=(now)=>{const p=Math.min((now-t0)/dur,1);const eased=1-Math.pow(1-p,3);el.textContent=fmt(Math.floor(target*eased));if(p<1)requestAnimationFrame(tick);else el.textContent=fmt(target);};
+    requestAnimationFrame(tick);
+  });},{threshold:.4});
+  counters.forEach(c=>cio.observe(c));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q=>{
+    q.addEventListener('click',()=>{
+      const item=q.parentElement;const a=q.nextElementSibling;const open=item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-a').style.maxHeight=null;});
+      if(!open){item.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';}
+    });
+  });
+
+  // Case filter
+  const fbtns=document.querySelectorAll('.case-filter button');
+  fbtns.forEach(b=>b.addEventListener('click',()=>{
+    fbtns.forEach(x=>x.classList.remove('active'));b.classList.add('active');
+    const f=b.dataset.filter;
+    document.querySelectorAll('#caseGrid .case').forEach(c=>{
+      const show=f==='all'||c.dataset.cat===f;
+      c.style.display=show?'':'none';
+    });
+  }));
+
+  // Form
+  const form=document.getElementById('consultForm');
+  form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    form.style.display='none';
+    document.getElementById('formOk').classList.add('show');
+  });
+
+  // To top
+  document.getElementById('toTop').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+})();
+</script>
+</body>
+</html>
