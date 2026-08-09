@@ -132,13 +132,13 @@
 
   /* ---------- Stats bar ---------- */
   .stats{margin-top:-60px;position:relative;z-index:5}
-  .stats .grid{background:#fff;border-radius:var(--radius-lg);box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden;border:1px solid var(--line)}
+  .stats .grid{background:#fff;border-radius:var(--radius-lg);box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(3,1fr);overflow:hidden;border:1px solid var(--line)}
   .stat{padding:30px 24px;text-align:center;position:relative}
   .stat+.stat::before{content:"";position:absolute;left:0;top:22%;height:56%;width:1px;background:var(--line)}
   .stat .num{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:900;color:var(--navy-800);letter-spacing:-.04em;line-height:1}
   .stat .num .suf{color:var(--blue-500)}
   .stat .lbl{margin-top:8px;color:var(--slate);font-size:.92rem;font-weight:600}
-  @media(max-width:760px){.stats .grid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(3)::before,.stat:nth-child(1)::before{display:none}.stat:nth-child(3),.stat:nth-child(4){border-top:1px solid var(--line)}}
+  @media(max-width:600px){.stat{padding:20px 8px}.stat .num{font-size:clamp(1.4rem,6vw,2rem)}.stat .lbl{font-size:.8rem}}
 
   /* ---------- Services ---------- */
   .services{padding:clamp(70px,9vw,110px) 0 clamp(60px,7vw,90px)}
@@ -513,7 +513,6 @@
   <div class="wrap">
     <div class="grid reveal">
       <div class="stat"><div class="num"><span data-count="5000">0</span><span class="suf">+</span></div><div class="lbl">누적 시공 현장</div></div>
-      <div class="stat"><div class="num"><span data-count="30">0</span><span class="suf">분</span></div><div class="lbl">평균 출동 시간</div></div>
       <div class="stat"><div class="num"><span data-count="98">0</span><span class="suf">%</span></div><div class="lbl">고객 만족도</div></div>
       <div class="stat"><div class="num"><span data-count="365">0</span><span class="suf">일</span></div><div class="lbl">연중무휴 운영</div></div>
     </div>
