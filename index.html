@@ -213,8 +213,6 @@
   .case .playbadge{position:absolute;top:14px;left:14px;z-index:3;display:inline-flex;align-items:center;gap:5px;background:rgba(8,23,46,.72);backdrop-filter:blur(4px);color:#fff;font-size:.76rem;font-weight:700;padding:6px 11px 6px 8px;border-radius:100px;border:1px solid rgba(255,255,255,.25);transition:.25s}
   .case .playbadge svg{width:14px;height:14px;color:var(--gold)}
   .case.has-video:hover .playbadge{background:var(--blue-600);border-color:transparent}
-  .case.has-video::after{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60px;height:60px;border-radius:50%;background:rgba(8,23,46,.55);backdrop-filter:blur(3px);border:2px solid rgba(255,255,255,.8);z-index:2;transition:.3s;opacity:.92;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M8 5v14l11-7z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:56% center;background-size:24px}
-  .case.has-video:hover::after{background-color:var(--blue-600);transform:translate(-50%,-50%) scale(1.08)}
   /* 사진·영상 갤러리 라이트박스 */
   .vlb{position:fixed;inset:0;z-index:200;background:rgba(6,14,28,.93);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:20px}
   .vlb.open{display:flex}
