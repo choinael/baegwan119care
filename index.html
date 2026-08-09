@@ -1045,12 +1045,17 @@
     else if(e.key==='ArrowRight')moveGal(1);
   });
 
-  // Form
+  // 상담신청 폼 → 구글 앱스스크립트(이메일+시트)
   const form=document.getElementById('consultForm');
+  const CONSULT_ENDPOINT="https://script.google.com/macros/s/AKfycbwfm5wyqABXa43j0Yzni4VoAUW4kUMIyJqYFkLPNkX8WdTEuV8uIxVzdajNXVYSG20s/exec";
   form.addEventListener('submit',(e)=>{
     e.preventDefault();
-    form.style.display='none';
-    document.getElementById('formOk').classList.add('show');
+    const btn=form.querySelector('button[type="submit"]');
+    if(btn){btn.disabled=true;btn.textContent="접수 중...";}
+    const params=new URLSearchParams();
+    new FormData(form).forEach((v,k)=>params.append(k,v));
+    const done=()=>{ form.style.display='none'; document.getElementById('formOk').classList.add('show'); };
+    fetch(CONSULT_ENDPOINT,{method:'POST',mode:'no-cors',body:params}).then(done).catch(done);
   });
 
   // To top
