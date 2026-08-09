@@ -209,10 +209,10 @@
   .case p{font-size:.87rem;color:#c0d1ea}
   .case .tick{position:absolute;top:16px;right:16px;width:30px;height:30px;border-radius:50%;background:rgba(26,162,81,.95);display:grid;place-items:center;z-index:3}
   .case .tick svg{width:16px;height:16px;color:#fff}
-  .case.has-video{cursor:pointer}
+  .case.has-media{cursor:pointer}
   .case .playbadge{position:absolute;top:14px;left:14px;z-index:3;display:inline-flex;align-items:center;gap:5px;background:rgba(8,23,46,.72);backdrop-filter:blur(4px);color:#fff;font-size:.76rem;font-weight:700;padding:6px 11px 6px 8px;border-radius:100px;border:1px solid rgba(255,255,255,.25);transition:.25s}
   .case .playbadge svg{width:14px;height:14px;color:var(--gold)}
-  .case.has-video:hover .playbadge{background:var(--blue-600);border-color:transparent}
+  .case.has-media:hover .playbadge{background:var(--blue-600);border-color:transparent}
   /* 사진·영상 갤러리 라이트박스 */
   .vlb{position:fixed;inset:0;z-index:200;background:rgba(6,14,28,.93);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:20px}
   .vlb.open{display:flex}
@@ -602,23 +602,23 @@
       <button data-filter="pipe">배관·누수</button>
     </div>
     <div class="case-grid" id="caseGrid">
-      <figure class="case reveal has-video" data-cat="drain" data-video="images/case-yangpyeong.mp4">
+      <figure class="case reveal has-media" data-cat="drain" data-video="images/case-yangpyeong.mp4">
         <img src="images/case-yangpyeong.jpg" alt="양평 배관 내시경 점검 시공" loading="lazy">
         <span class="playbadge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>영상보기</span>
         <span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
         <div class="overlay"><span class="cat">하수구·배관</span><h4>양평 배관 내시경 점검</h4><p>내시경 카메라로 배관 내부 정밀 진단</p></div>
       </figure>
-      <figure class="case reveal d1 has-video" data-cat="drain" data-photos="images/case-dongtan-1.jpg,images/case-dongtan-2.jpg,images/case-dongtan-3.jpg,images/case-dongtan-4.jpg,images/case-dongtan-5.jpg,images/case-dongtan-6.jpg,images/case-dongtan-7.jpg" data-video="images/case-dongtan.mp4">
+      <figure class="case reveal d1 has-media" data-cat="drain" data-photos="images/case-dongtan-1.jpg,images/case-dongtan-2.jpg,images/case-dongtan-3.jpg,images/case-dongtan-4.jpg,images/case-dongtan-5.jpg,images/case-dongtan-6.jpg,images/case-dongtan-7.jpg" data-video="images/case-dongtan.mp4">
         <img src="images/case-dongtan-1.jpg" alt="동탄반송119안전센터 배관 고압세척·내시경 점검" loading="lazy">
         <span class="playbadge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>사진·영상</span>
         <span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
         <div class="overlay"><span class="cat">하수구·배관</span><h4>동탄반송119안전센터</h4><p>기계실 배관 고압세척 · 내시경 정밀 점검</p></div>
       </figure>
-      <figure class="case reveal d2" data-cat="pipe">
-        <img src="images/case-3.jpg" alt="싱크대 하부 배관 정비" onerror="this.remove()">
-        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><small>시공 사진 준비중</small></div>
+      <figure class="case reveal d2 has-media" data-cat="drain" data-photos="images/case-yeoju-1.jpg,images/case-yeoju-2.jpg,images/case-yeoju-3.jpg,images/case-yeoju-4.jpg,images/case-yeoju-5.jpg">
+        <img src="images/case-yeoju-1.jpg" alt="여주 배관 막힘 관통·내시경 점검" loading="lazy">
+        <span class="playbadge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>사진 5장</span>
         <span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
-        <div class="overlay"><span class="cat">배관·누수</span><h4>싱크대 하부 배관 정비</h4><p>노후 연결부 점검 및 역류 해결</p></div>
+        <div class="overlay"><span class="cat">하수구·배관</span><h4>여주 배관 막힘 관통</h4><p>플렉스샤프트 관통 + 내시경 정밀 점검</p></div>
       </figure>
       <figure class="case reveal" data-cat="toilet">
         <img src="images/case-4.jpg" alt="변기 막힘 해결 시공" onerror="this.remove()">
@@ -977,7 +977,7 @@
   function openGal(items,start){ if(!items.length)return; GAL=items; gidx=start||0; vlb.classList.add('open'); document.body.style.overflow='hidden'; renderGal(); }
   function closeGal(){ stopVids(); vlb.classList.remove('open'); stage.innerHTML=''; document.body.style.overflow=''; }
   function moveGal(n){ if(!GAL.length)return; gidx=(gidx+n+GAL.length)%GAL.length; renderGal(); }
-  document.querySelectorAll('#caseGrid .case.has-video').forEach(c=>{
+  document.querySelectorAll('#caseGrid .case.has-media').forEach(c=>{
     c.addEventListener('click',()=>{
       const items=[];
       const photos=(c.getAttribute('data-photos')||'').split(',').map(s=>s.trim()).filter(Boolean);
