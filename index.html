@@ -177,9 +177,11 @@
   .why-item p{color:var(--slate);font-size:.94rem}
   .why-visual{position:relative;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:3/3.3;box-shadow:var(--shadow);background:linear-gradient(150deg,#e8f0fc,#dbe8fb)}
   .why-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .why-slides img{opacity:0;transition:opacity 1.1s var(--ease);z-index:0}
+  .why-slides img.on{opacity:1;z-index:1}
   .why-visual .ph{position:absolute;inset:0;display:grid;place-content:center;text-align:center;gap:8px;color:var(--slate-2)}
   .why-visual .ph svg{width:52px;height:52px;margin:0 auto;opacity:.6}
-  .why-guarantee{position:absolute;left:20px;bottom:20px;right:20px;background:rgba(8,23,46,.86);backdrop-filter:blur(8px);color:#fff;border-radius:16px;padding:18px 22px;display:flex;align-items:center;gap:14px}
+  .why-guarantee{position:absolute;left:20px;bottom:20px;right:20px;z-index:3;background:rgba(8,23,46,.86);backdrop-filter:blur(8px);color:#fff;border-radius:16px;padding:18px 22px;display:flex;align-items:center;gap:14px}
   .why-guarantee svg{width:34px;height:34px;color:var(--gold);flex-shrink:0}
   .why-guarantee b{font-size:1.05rem;display:block}
   .why-guarantee small{color:#b9c9e2;font-size:.85rem}
@@ -576,8 +578,13 @@
       </div>
     </div>
     <div class="why-visual reveal d2">
-      <!-- 실제 시공 사진으로 교체: images/why.jpg -->
-      <img src="images/why.jpg?v=1" alt="배관119케어 책임시공 · 전문 장비 시공">
+      <div class="why-slides" id="whySlides">
+        <img src="images/case-dongtan-1.jpg" class="on" alt="배관119케어 배관 고압세척 시공" loading="lazy">
+        <img src="images/case-chuncheon-1.jpg" alt="배관119케어 전문 장비 시공" loading="lazy">
+        <img src="images/case-uiwang-2.jpg" alt="배관119케어 배관 관통 작업" loading="lazy">
+        <img src="images/case-bucheon-1.jpg" alt="배관119케어 배관 진단 시공" loading="lazy">
+        <img src="images/case-wonju-1.jpg" alt="배관119케어 싱크대 배관 시공" loading="lazy">
+      </div>
       <div class="why-guarantee">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 15l-4-4 1.41-1.41L11 13.17l5.59-5.59L18 9l-7 7z"/></svg>
         <div><b>100% 책임시공 A/S 보장</b><small>시공 후 문제 발생 시 끝까지 책임집니다.</small></div>
@@ -1008,6 +1015,17 @@
     } else { visible.delete(e.target); }
   });},{threshold:.4});
   counters.forEach(c=>cio.observe(c));
+
+  // 책임시공 이미지 자동 슬라이드
+  const whySlides=document.querySelectorAll('#whySlides img');
+  if(whySlides.length>1){
+    let wi=0;
+    setInterval(()=>{
+      whySlides[wi].classList.remove('on');
+      wi=(wi+1)%whySlides.length;
+      whySlides[wi].classList.add('on');
+    },3200);
+  }
 
   // FAQ accordion
   document.querySelectorAll('.faq-q').forEach(q=>{
