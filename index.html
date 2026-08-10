@@ -79,9 +79,9 @@
   .btn-gold:hover{transform:translateY(-3px)}
   .btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(6px)}
   .btn-ghost:hover{background:rgba(255,255,255,.16);transform:translateY(-3px)}
-  .btn-kakao{background:#FEE500;color:#1a1600;box-shadow:0 14px 30px -12px rgba(254,229,0,.7)}
-  .btn-kakao:hover{transform:translateY(-3px);background:#ffe600}
-  .btn-kakao .talk{background:#3a1d1d;color:#FEE500;font-size:.72rem;font-weight:900;padding:5px 8px 6px;border-radius:8px 8px 8px 2px;line-height:1;letter-spacing:0}
+  .btn-sms{background:#06c167;color:#fff;box-shadow:0 14px 30px -12px rgba(6,193,103,.6)}
+  .btn-sms:hover{transform:translateY(-3px);background:#05ad5b}
+  .btn-sms svg{width:20px;height:20px}
   .btn-lg{padding:18px 34px;font-size:1.08rem}
 
   /* ---------- Top bar ---------- */
@@ -397,8 +397,8 @@
   .cta-bar__call .txt{display:flex;flex-direction:column;line-height:1.12;text-align:left}
   .cta-bar__call small{font-size:.74rem;font-weight:600;color:#c7d8f2;letter-spacing:-.01em}
   .cta-bar__call b{font-size:1.24rem;font-weight:900;letter-spacing:.01em}
-  .cta-bar__kakao{background:#FEE500;color:#1a1600;font-weight:800;font-size:1.05rem;letter-spacing:-.02em}
-  .cta-bar__kakao .talk{background:#3a1d1d;color:#FEE500;font-size:.7rem;font-weight:900;padding:5px 8px 6px;border-radius:8px 8px 8px 2px;line-height:1;letter-spacing:0}
+  .cta-bar__sms{background:#06c167;color:#fff;font-weight:800;font-size:1.05rem;letter-spacing:-.02em}
+  .cta-bar__sms svg{width:20px;height:20px}
   /* 모바일: 하단 풀와이드 고정바 */
   @media(max-width:600px){
     body{padding-bottom:76px}
@@ -409,7 +409,7 @@
     .cta-bar__call .txt{min-width:0;overflow:hidden}
     .cta-bar__call small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .cta-bar__call b{white-space:nowrap;font-size:1.12rem}
-    .cta-bar__kakao{flex:0 0 auto;white-space:nowrap;justify-content:center;padding:8px 15px;font-size:1rem}
+    .cta-bar__sms{flex:0 0 auto;white-space:nowrap;justify-content:center;padding:8px 15px;font-size:1rem}
   }
 
   /* ---------- Floating actions ---------- */
@@ -417,7 +417,6 @@
   .fab a,.fab button{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;box-shadow:var(--shadow);cursor:pointer;border:none;transition:transform .25s var(--ease),box-shadow .25s;position:relative}
   .fab a svg,.fab button svg{width:26px;height:26px}
   .fab .call{background:linear-gradient(135deg,var(--blue-600),var(--blue-400));color:#fff;animation:pulse 2.2s infinite}
-  .fab .kakao{background:#FEE500;color:#3c1e1e}
   .fab .top{background:#fff;color:var(--navy-800);border:1px solid var(--line);opacity:0;visibility:hidden;transform:translateY(10px)}
   .fab .top.show{opacity:1;visibility:visible;transform:none}
   .fab a:hover,.fab button:hover{transform:scale(1.08)}
@@ -506,7 +505,7 @@
   <div class="wrap">
     <div class="hero-mini-cta reveal d1">
       <a href="tel:010-8216-2991" class="btn btn-gold btn-lg"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>전화 상담 010-8216-2991</a>
-      <a href="http://pf.kakao.com/_your_channel" class="btn btn-kakao btn-lg" target="_blank" rel="noopener"><span class="talk">TALK</span>카카오톡 상담</a>
+      <a href="sms:010-8216-2991" class="btn btn-sms btn-lg"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg>문자 상담</a>
     </div>
   </div>
 </section>
@@ -942,9 +941,8 @@
     <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg></span>
     <span class="txt"><small>24시 빠른상담 바로 통화</small><b>010-8216-2991</b></span>
   </a>
-  <!-- 카톡 채널 주소로 교체: http://pf.kakao.com/_본인채널ID -->
-  <a href="http://pf.kakao.com/_your_channel" class="cta-bar__kakao" target="_blank" rel="noopener" aria-label="카카오톡 상담">
-    <span class="talk">TALK</span><span class="lbl-full">카톡 상담</span>
+  <a href="sms:010-8216-2991" class="cta-bar__sms" aria-label="문자 상담">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg><span class="lbl-full">문자 상담</span>
   </a>
 </div>
 
