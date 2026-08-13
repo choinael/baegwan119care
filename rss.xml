@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>배관119케어</title>
+    <link>https://baegwan119care.co.kr/</link>
+    <description>배관119케어 - 하수구막힘, 싱크대막힘, 변기막힘, 누수 및 배관 전문 서비스</description>
+    <language>ko-KR</language>
+
+    <item>
+      <title>배관119케어 | 막힘·누수 24시간 긴급출동</title>
+      <link>https://baegwan119care.co.kr/</link>
+      <guid>https://baegwan119care.co.kr/</guid>
+      <description>하수구막힘, 싱크대막힘, 변기막힘, 누수 등 배관 문제 전문 해결. 365일 연중무휴 24시간 긴급출동.</description>
+    </item>
+  </channel>
+</rss>
