@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>배관119케어</title>
+    <title>배관119케어 시공사례 및 지역 안내</title>
     <link>https://baegwan119care.co.kr/</link>
-    <description>배관119케어 - 하수구막힘, 싱크대막힘, 변기막힘, 누수 및 배관 전문 서비스</description>
+    <description>하수구막힘·싱크대막힘·변기막힘·고압세척 시공사례와 전국 지역별 배관 상담 안내</description>
     <language>ko-KR</language>
-
+    <lastBuildDate>Sat, 15 Aug 2026 13:30:00 +0900</lastBuildDate>
     <item>
-      <title>배관119케어 | 막힘·누수 24시간 긴급출동</title>
-      <link>https://baegwan119care.co.kr/</link>
-      <guid>https://baegwan119care.co.kr/</guid>
-      <description>하수구막힘, 싱크대막힘, 변기막힘, 누수 등 배관 문제 전문 해결. 365일 연중무휴 24시간 긴급출동.</description>
+      <title>광주 화장실 바닥 배관 막힘 작업사례</title>
+      <link>https://baegwan119care.co.kr/광주시/index.html</link>
+      <guid>https://baegwan119care.co.kr/광주시/index.html</guid>
+      <description>화장실 바닥 배관의 굳은 이물질을 제거하고 내시경으로 배수 흐름을 확인한 작업사례입니다.</description>
+      <pubDate>Sat, 15 Aug 2026 13:20:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>안성 롯데캐슬 싱크대 배관 작업사례</title>
+      <link>https://baegwan119care.co.kr/안성시/index.html</link>
+      <guid>https://baegwan119care.co.kr/안성시/index.html</guid>
+      <description>싱크대 하부 배관을 플렉스샤프트로 관통하고 내시경으로 통수 상태를 확인한 작업사례입니다.</description>
+      <pubDate>Sat, 15 Aug 2026 13:10:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>배관119케어 전국 출장지역 안내</title>
+      <link>https://baegwan119care.co.kr/지역안내.html</link>
+      <guid>https://baegwan119care.co.kr/지역안내.html</guid>
+      <description>서울·경기·강원·충청·전라·경상·제주 등 시군구별 배관 상담 페이지를 확인할 수 있습니다.</description>
+      <pubDate>Sat, 15 Aug 2026 13:00:00 +0900</pubDate>
     </item>
   </channel>
 </rss>
