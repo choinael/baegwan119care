@@ -13,12 +13,12 @@
 
 ## 주요 서비스
 
-- 하수구막힘 및 역류 점검
-- 싱크대막힘 및 기름 슬러지 제거
-- 변기막힘 및 이물질 점검
-- 배관 내시경 진단
-- 플렉스샤프트 관통 작업
-- 배관 고압세척
+- 하수구막힘 및 역류 점검: https://baegwan119care.co.kr/services/drain-clog.html
+- 싱크대막힘 및 기름 슬러지 점검: https://baegwan119care.co.kr/services/sink-clog.html
+- 변기막힘 및 이물질 점검: https://baegwan119care.co.kr/services/toilet-clog.html
+- 수전교체: https://baegwan119care.co.kr/services/faucet-replacement.html
+- 누수탐지: https://baegwan119care.co.kr/services/leak-detection.html
+- 배관 고압세척: https://baegwan119care.co.kr/services/high-pressure-cleaning.html
 
 ## 콘텐츠 안내
 
