@@ -11,3 +11,5 @@
 - 서비스 카드 아무 곳이나 눌러도 전용 페이지로 이동
 - 서비스별 제목·설명·FAQ·구조화 데이터 적용
 - sitemap.xml에 서비스 전용 주소 추가
+- 네이버 진단용 favicon.ico·favicon.svg·favicon.png 추가
+- 누락된 images/banner.jpg 복구 및 대표 공유 이미지 연결
