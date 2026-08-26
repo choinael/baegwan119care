@@ -1,5 +1,6 @@
 @echo off
 chcp 65001 >nul
+cd /d "%~dp0"
 echo [배관119케어.co.kr] 수정본을 Vercel 프로덕션에 배포합니다.
 npx vercel --prod --archive=tgz
 echo.
