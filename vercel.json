@@ -1,5 +1,111 @@
-{
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/region/:path*",
+      "destination": "https://baegwan119care.kr/region/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:area((?:[^/]+시|[^/]+군|[^/]+구))/:path*",
+      "destination": "https://baegwan119care.kr/",
+      "permanent": true
+    },
+    {
+      "source": "/지역안내.html",
+      "destination": "https://baegwan119care.kr/",
+      "permanent": true
+    },
+    {
+      "source": "/서울.html",
+      "destination": "https://baegwan119care.kr/region/seoul",
+      "permanent": true
+    },
+    {
+      "source": "/경기도.html",
+      "destination": "https://baegwan119care.kr/region/gyeonggi",
+      "permanent": true
+    },
+    {
+      "source": "/인천광역시.html",
+      "destination": "https://baegwan119care.kr/region/incheon",
+      "permanent": true
+    },
+    {
+      "source": "/강원특별자치도.html",
+      "destination": "https://baegwan119care.kr/region/gangwon",
+      "permanent": true
+    },
+    {
+      "source": "/충청북도.html",
+      "destination": "https://baegwan119care.kr/region/chungcheong",
+      "permanent": true
+    },
+    {
+      "source": "/충청남도.html",
+      "destination": "https://baegwan119care.kr/region/chungcheong",
+      "permanent": true
+    },
+    {
+      "source": "/대전광역시.html",
+      "destination": "https://baegwan119care.kr/region/daejeon",
+      "permanent": true
+    },
+    {
+      "source": "/세종특별자치시.html",
+      "destination": "https://baegwan119care.kr/region/sejong",
+      "permanent": true
+    },
+    {
+      "source": "/광주광역시.html",
+      "destination": "https://baegwan119care.kr/region/gwangju",
+      "permanent": true
+    },
+    {
+      "source": "/울산광역시.html",
+      "destination": "https://baegwan119care.kr/region/ulsan",
+      "permanent": true
+    },
+    {
+      "source": "/대구광역시.html",
+      "destination": "https://baegwan119care.kr/region/daegu",
+      "permanent": true
+    },
+    {
+      "source": "/부산광역시.html",
+      "destination": "https://baegwan119care.kr/region/busan",
+      "permanent": true
+    },
+    {
+      "source": "/경상북도.html",
+      "destination": "https://baegwan119care.kr/region/gyeongsang",
+      "permanent": true
+    },
+    {
+      "source": "/경상남도.html",
+      "destination": "https://baegwan119care.kr/region/gyeongsang",
+      "permanent": true
+    },
+    {
+      "source": "/전북특별자치도.html",
+      "destination": "https://baegwan119care.kr/region/jeolla",
+      "permanent": true
+    },
+    {
+      "source": "/전라남도.html",
+      "destination": "https://baegwan119care.kr/region/jeolla",
+      "permanent": true
+    },
+    {
+      "source": "/services/:path*",
+      "destination": "https://baegwan119care.kr/",
+      "permanent": true
+    },
+    {
+      "source": "/cases/:path*",
+      "destination": "https://baegwan119care.kr/cases/",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
